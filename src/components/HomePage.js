@@ -23,6 +23,7 @@ const HomePage = () => {
       <p>
         副業についての情報は本ページ下部へ、ブログについてはヘッダーの「ブログ」を押下してください！
       </p>
+      <hr />
 
       {/* ポートフォリオ一覧 */}
       <section class="page-section" id="services">
@@ -81,6 +82,7 @@ const HomePage = () => {
           </div>
         </div>
       </section>
+      <hr />
 
       <section id="skill">
         <div class="text-center">
