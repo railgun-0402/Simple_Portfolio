@@ -70,11 +70,6 @@ nav ul li a:hover {
   margin-bottom: 15px;
 }
 
-img {
-  width: 300px;
-  height: 500px;
-}
-
 .service {
   margin-top: 80px;
   margin-bottom: 60px;
@@ -85,8 +80,82 @@ img {
   margin-bottom: 12px;
   margin-top: 12px;
   height: 300px;
+  width: 320px;
 }
 
 #skill button {
   margin-bottom: 100px;
+}
+
+#blog img {
+  object-fit: cover;
+  margin-bottom: 12px;
+  margin-top: 12px;
+  height: 150px;
+}
+
+#blog .link-image img {
+  object-fit: cover;
+  margin-bottom: 12px;
+  margin-top: 12px;
+  height: 340px;
+}
+
+.link-image {
+  cursor: pointer;
+  max-width: 400px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.link-image img {
+  height: auto;
+  transition: transform 0.6s ease; /* 変化時間 */
+}
+
+.link-image:hover img {
+  transform: scale(1.1); /* 拡大 */
+}
+
+/* マスク */
+.link-image::before {
+  background: rgba(61, 56, 66, 0.368); /* マスクの色(黒の50%) */
+  bottom: 0;
+  content: "";
+  height: auto;
+  left: 0;
+  opacity: 0; /* 最初は透明（非表示） */
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: opacity 0.6s ease; /* ゆっくりopacityのみへ変化させる */
+  width: 100%;
+  z-index: 1;
+}
+.link-image:hover::before {
+  opacity: 1;
+}
+
+#blog a:hover {
+  opacity: 1;
+}
+
+.bg-light {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.qiita-image {
+  overflow: hidden;
+  width: 250px;
+}
+
+.qiita-image img {
+  height: auto;
+  transition: transform 0.6s ease; /* 変化時間 */
+}
+
+.qiita-image:hover img {
+  transform: scale(1.16); /* 拡大 */
 }
