@@ -14,6 +14,9 @@ const Header = () => {
             <Link to={"/"}>ホーム</Link>
           </li>
           <li>
+            <Link to={"#"}>副業</Link>
+          </li>
+          <li>
             <Link to={"/blog"}>ブログ</Link>
           </li>
           <li>

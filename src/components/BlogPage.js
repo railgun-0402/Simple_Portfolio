@@ -22,7 +22,6 @@ const BlogPage = () => {
               <img src={qiitaImage} />
             </Link>
           </div>
-
           <hr />
 
           {/* ブログ1 */}
